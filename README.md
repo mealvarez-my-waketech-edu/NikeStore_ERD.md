@@ -53,3 +53,4 @@ Product to Invoice relationship - **Invoices** are sales made to customers and h
 Inventory to Product relationship - **Inventories** are lists of items such as **products** that detail inforation such as quantity on hand, product characteristics, and pricing.
 Customer to Order relationship - **Customers** can place one or many **orders** which have lists of products purchased.
 Customer to Invoice relationship - **Customers** orders have associated **invoices** that lists money to be paid for the products purchased.
+Order to Invoice relationship - **Orders* always have associated **invoices**
