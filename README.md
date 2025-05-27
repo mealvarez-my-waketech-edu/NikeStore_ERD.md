@@ -18,15 +18,6 @@ erDiagram
         string color
         string quantity
     }
-    CUSTOMER ||--o{ ORDER : places
-    CUSTOMER ||--o{ INVOICE : "pays for"
-    CUSTOMER {
-        string membershipNumber PK
-        string firstName
-        string lastName
-        string phone
-        int age
-    }
     ORDER ||--o{ INVOICE : has
     ORDER {
         string orderNumber PK
@@ -49,6 +40,15 @@ erDiagram
         string orderNumber PK, FK
         string membershipNumber PK, FK
         string serialNumber PK, FK
+    }
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ INVOICE : "pays for"
+    CUSTOMER {
+        string membershipNumber PK
+        string firstName
+        string lastName
+        string phone
+        int age
     }
     MANUFACTURER only one to zero or more PRODUCT : makes
 ```
