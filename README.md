@@ -14,12 +14,12 @@ erDiagram
         string size
         string color
     }
-    INVENTORY ||--o{ PRODUCT : has
+    INVENTORY }o--o{ PRODUCT : has
     INVENTORY {
-        string quantity
         string type
         string size
         string color
+        string quantity
     }
     CUSTOMER ||--o{ ORDER : places
     CUSTOMER ||--o{ INVOICE : liable for
