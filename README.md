@@ -7,14 +7,15 @@ o Inventory: Tracks the stock levels of various shoe models.
 
 ```mermaid
 erDiagram
-    PRODUCT ||--o{ SALES : allows
+    PRODUCT ||--o{ INVOICE : allows
     PRODUCT {
         string serialNumber PK
         string type
         string size
         string color
     }
-    CUSTOMER ||--o{ SALES : has
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ INVOICE : liable for
     CUSTOMER {
         string membershipNumber PK
         string firstName
@@ -22,7 +23,12 @@ erDiagram
         string phone
         int age
     }
-    SALES {
+    ORDER {
+        string orderNumber PK
+        string membershipNumber PK, FK
+        string serialNumber PK, FK
+    }
+    INVOICE {
         string invoiceNumber PK
         string membershipNumber PK, FK
         string serialNumber PK, FK
