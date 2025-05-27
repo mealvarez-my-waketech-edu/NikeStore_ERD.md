@@ -53,7 +53,7 @@ erDiagram
     MANUFACTURER only one to zero or more PRODUCT : makes
 ```
 
-The entities I have made are PRODUCT, INVENTORY, CUSTOMER, ORDER, and INVOICE (SALES)
+The entities I have made are PRODUCT, INVENTORY, CUSTOMER, ORDER, STORE, and INVOICE (SALES)
  * Product: an article or substance that is manufactured or refined for sale.
  * Inventory: a complete list of items such as property, goods in stock, or the contents of a building.
  * Customer: a person or organization that buys goods or services from a store or business.
