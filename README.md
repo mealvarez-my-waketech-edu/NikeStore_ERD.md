@@ -27,7 +27,7 @@ erDiagram
         string membershipNumber PK, FK
         string serialNumber PK, FK
     }
-    MANUFACTURER only one to zero or more CAR : makes
+    MANUFACTURER only one to zero or more PRODUCT : makes
 ```
 
 ```mermaid
