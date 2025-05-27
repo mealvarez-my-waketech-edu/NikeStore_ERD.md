@@ -37,6 +37,7 @@ erDiagram
     }
     STORE ||--o{ ORDER : has
     STORE ||--o{ INVOICE : has
+    STORE ||--o{ INVENTORY : has
     STORE {
         string storeNumber PK
         string address
