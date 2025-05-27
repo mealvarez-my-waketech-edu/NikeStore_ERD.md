@@ -2,7 +2,7 @@
 
 ```mermaid
 erDiagram
-    PRODUCT ||--o{ INVOICE : allows
+    PRODUCT ||--o{ ORDER : allows
     PRODUCT {
         string serialNumber PK
         string type
@@ -25,6 +25,7 @@ erDiagram
         string phone
         int age
     }
+    ORDER ||--o{ INVOICE : has
     ORDER {
         string orderNumber PK
         string invoiceNumber PK, FK
