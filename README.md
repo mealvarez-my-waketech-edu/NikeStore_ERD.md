@@ -46,7 +46,7 @@ The entities I have made are PRODUCT, INVENTORY, CUSTOMER, ORDER, and INVOICE (S
  * Inventory: a complete list of items such as property, goods in stock, or the contents of a building.
  * Customer: a person or organization that buys goods or services from a store or business.
  * Order: a formal request made by a buyer to a seller indicating what they want to purchase and how much they are willing to pay.
- * INVOICE: a document that outlines goods or services provided by a seller to a buyer, including the price and terms of sale.
+ * INVOICE: a document that outlines goods or services provided by a seller to a buyer, including the price and terms of sale.  
 **Definitions from [Google](https://www.google.com/)**
 
 Product to Invoice relationship - **Invoices** are sales made to customers and have lists of **products** purchased.
