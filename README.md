@@ -29,17 +29,3 @@ erDiagram
     }
     MANUFACTURER only one to zero or more PRODUCT : makes
 ```
-
-```mermaid
-erDiagram
- PRODUCT {
- }
- CUSTOMER {
-
- }
- SALE {
- }
- INVENTORY {
- }
-
-```
