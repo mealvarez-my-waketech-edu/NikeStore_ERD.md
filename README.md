@@ -1,25 +1,31 @@
 # NikeStore_ERD.md
+Understand the Business Context:
+o *Products: Represents different models of Nike shoes sold in the store.
+o Customers: Details about customers who purchase shoes.
+o Sales: Transaction records linking customers and the products they buy.
+o Inventory: Tracks the stock levels of various shoe models.
 
 ```mermaid
 erDiagram
-    CAR ||--o{ NAMED-DRIVER : allows
-    CAR {
-        string registrationNumber PK
-        string make
-        string model
-        string[] parts
+    PRODUCT ||--o{ SALES : allows
+    PRODUCT {
+        string serialNumber PK
+        string type
+        string size
+        string color
     }
-    PERSON ||--o{ NAMED-DRIVER : is
-    PERSON {
-        string driversLicense PK "The license #"
-        string(99) firstName "Only 99 characters are allowed"
+    CUSTOMER ||--o{ SALES : has
+    CUSTOMER {
+        string membershipNumber PK
+        string firstName
         string lastName
-        string phone UK
+        string phone
         int age
     }
-    NAMED-DRIVER {
-        string carRegistrationNumber PK, FK
-        string driverLicence PK, FK
+    SALES {
+        string invoiceNumber PK
+        string membershipNumber PK, FK
+        string serialNumber PK, FK
     }
     MANUFACTURER only one to zero or more CAR : makes
 ```
